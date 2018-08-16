@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Menu, HedThumbs } from "@uxfed/ux-prototype-lib";
+import { Menu, HedThumbs, Ad, SectionSubhead } from "@uxfed/ux-prototype-lib";
 import styled from "styled-components";
 
 class App extends Component {
@@ -8,7 +8,10 @@ class App extends Component {
       <div>
         <Menu section="money" />
         <Wrapper>
-          <HedThumbs section="news" number="4" />
+          <SectionSubhead sectionColor="news" name="test" />
+          <HedThumbs section="news" number="3" />
+          <Ad />
+          <HedThumbs section="news" number="5" />
         </Wrapper>
       </div>
     );
